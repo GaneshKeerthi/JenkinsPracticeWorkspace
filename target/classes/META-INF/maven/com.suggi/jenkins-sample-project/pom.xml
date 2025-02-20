@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.suggi</groupId>
+  <artifactId>jenkins-sample-project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Jenkins Sample Project</name>
+  <description>To test Jenkins CI CD Pipeline</description>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.junit.jupiter</groupId>
+  		<artifactId>junit-jupiter-engine</artifactId>
+  		<version>5.12.0-RC1</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.junit.jupiter</groupId>
+  		<artifactId>junit-jupiter-api</artifactId>
+  		<version>5.12.0-RC2</version>
+  	</dependency>
+  </dependencies>
+</project>
