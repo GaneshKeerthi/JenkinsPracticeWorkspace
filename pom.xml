@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Jenkins Sample Project</name>
   <description>To test Jenkins CI CD Pipeline</description>
+
+  <properties>
+        <sonar.host.url>http://1localhost:9000/</sonar.host.url>
+  </properties>
   
   <dependencies>
   	<dependency>
@@ -12,7 +16,13 @@
   		<artifactId>junit-jupiter-engine</artifactId>
   		<version>5.12.0-RC1</version>
   	</dependency>
-  	
+
+    <dependency>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.6.0.1398</version>
+    </dependency
+    
   	<dependency>
   		<groupId>org.junit.jupiter</groupId>
   		<artifactId>junit-jupiter-api</artifactId>
