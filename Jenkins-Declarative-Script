@@ -1,5 +1,10 @@
 pipeline{
     agent any
+
+    tools{
+        maven "Maven-Installation-Reference"
+    }
+
     stages{
         stage("Welcome"){
             steps{
@@ -12,7 +17,11 @@ pipeline{
                 credentialsId: '6c8c5f7d-cc69-49b8-a169-b5110443fa46',
                 url: 'https://github.com/GaneshKeerthi/JenkinsPracticeWorkspace.git'
             }
-            
+        }
+        stage("Maven Build"){
+            steps{
+                bat "mvn clean install"
+            }
         }
     }
 }
