@@ -23,5 +23,13 @@ pipeline{
                 bat "mvn clean install"
             }
         }
+        stage("SonarQube Analysis"){
+            environment {
+                SONARQUBE_SCANNER_PARAMS = 'sonar.login=retail-token'
+            }
+            steps{
+                bat "mvn sonar:sonar"
+            }
+        }
     }
 }
