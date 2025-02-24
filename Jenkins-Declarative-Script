@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    stages{
+        stage("Welcome"){
+            steps{
+                echo "Welcome to Jenkins Declarative Pipeline"
+            }
+        }
+        stage("Git Checkout"){
+            steps{
+                git branch: 'main',
+                credentialsId: '6c8c5f7d-cc69-49b8-a169-b5110443fa46',
+                url: 'https://github.com/GaneshKeerthi/JenkinsPracticeWorkspace.git'
+            }
+            
+        }
+    }
+}
